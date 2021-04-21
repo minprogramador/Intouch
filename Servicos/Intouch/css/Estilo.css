@@ -1,0 +1,2825 @@
+﻿@font-face {
+    font-family: 'UbuntuLight';
+    src: url('Ubuntu/Ubuntu-Light.eot');
+    src: url('Ubuntu/Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
+         url('Ubuntu/Ubuntu-Light.woff') format('woff'),
+         url('Ubuntu/Ubuntu-Light.ttf') format('truetype'),
+         url('Ubuntu/Ubuntu-Light.svg#Ubuntu-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html > body .Site
+{
+    height: auto;
+}
+
+body{
+    color: #333333;
+}
+
+a
+{
+    color: #3B6F9D;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+    color: #001E47;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-weight: normal !important;
+}
+
+strong
+{
+    font-family: 'UbuntuBold';
+}
+
+input[type=text], input[type=password]
+{
+    border: 1px solid #CECECE;
+    border-radius: 2px 2px 2px 2px;
+    font: 12px 'UbuntuRegular';
+    height: 22px;
+    margin: 0 16px 0 5px;
+    padding: 2px 0 0 4px;
+}
+
+.BannerLogin
+{
+    background: url(  "../img/BannerLogin.jpg" );
+    width: 610px !important;
+    height: 90px;
+    margin-bottom: 10px;
+    padding: 0 !important;
+}
+
+.BtBannerLogin
+{
+    float: right !important;
+    background: url(  "../img/BtBannerLogin.png" );
+    width: 105px !important;
+    height: 28px;
+    padding: 0 !important;
+    margin-right: 10px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.Site
+{
+    width: 960px;
+    margin: 0 auto;
+    clear: both;
+}
+
+.Cabecalho
+{
+    height: 120px;
+}
+
+.Topo
+{
+    height: 46px;
+}
+
+.Topo ul.menubar .submenu
+{
+    list-style: none;
+    float: left;
+}
+
+.Topo ul.menubar li
+{
+    width: auto;
+    float: left;
+}
+
+.Topo ul.menubar ul.menu
+{
+    display: none;
+    margin: 0;
+    position: absolute;
+    z-index: 300;
+}
+
+/* 
+.Topo ul.menubar ul.menu{
+  display: none;
+  position: absolute;
+  margin: 0px;
+}
+*/
+
+.Topo ul.menubar ul.menu li
+{
+    width: 170px;
+    clear: both;
+}
+.Topo ul.menubar ul.menu li a
+{
+    color: #666666;
+    font-weight: normal;
+}
+.Topo ul.menubar ul.menu li a:hover
+{
+    color: #333333;
+    background: none;
+}
+
+.Topo ul.menubar a
+{
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 12px 10px;
+}
+
+.Topo ul.menubar a:hover
+{
+    background: #3B6F9D;
+}
+
+.Topo ul.menu, ul.menu ul
+{
+    border: 2px solid #568EC0;
+    border-width: 0 2px 2px 2px;
+    width: 120px;
+    display: block;
+    background: url(../img/BgTrans.png);
+}
+
+.Topo ul.menu li
+{
+    position: relative;
+    list-style: none;
+    border: 0px;
+    width: 120px;
+    border-bottom: 1px solid #BCBCBC;
+    height: 40px;
+}
+
+.Topo ul.menu li a
+{
+    display: block;
+    text-decoration: none;
+    border-bottom: 0px;
+    height: 20px;
+}
+
+.Topo ul.menu li.submenu a
+{
+    font-weight: bold;
+}
+.Topo ul.menu li.submenu ul
+{
+    width: 170px;
+}
+.Topo ul.menu li.submenu ul.UsuarioItens li
+{
+    width: 170px;
+    clear: both;
+}
+.Topo ul.menu li.submenu ul.UsuarioItens li a
+{
+    color: #666666;
+    font-weight: normal;
+}
+.Topo ul.menu li.submenu ul.UsuarioItens li a:hover
+{
+    color: #333333;
+    background: none;
+}
+
+/* 
+.Topo ul.menu li a.DataFour:hover {background-position: -110px 0;}
+.Topo ul.menu li a.MetaData {background-position: 0 -40px;}
+.Topo ul.menu li a.MetaData:hover {background-position: -110px -40px;}
+.Topo ul.menu li a.DataCount {background-position: 0 -80px;}
+.Topo ul.menu li a.DataCount:hover {background-position: -110px -80px;}
+.Topo ul.menu li a.BrasilCluster {background-position: 0 -120px;}
+.Topo ul.menu li a.BrasilCluster:hover {background-position: -110px -120px;}
+*/
+
+.Topo ul.menu li sup
+{
+    font-weight: bold;
+    font-size: 7px;
+}
+
+/* Fix IE. Hide from IE Mac \*/
+* html .Topo ul.menu li
+{
+    float: left;
+    height: 1%;
+}
+* html .Topo ul.menu li a
+{
+    height: 1%;
+}
+/* End */
+
+.Topo ul.menu ul
+{
+    position: absolute;
+    display: none;
+}
+
+.Topo ul.menu li.submenu ul
+{
+    display: none;
+}
+/* Hide sub-menus initially */
+.Topo ul.menubar li.submenu
+{
+    background: url(  "../img/SetaSubmenu.png" ) no-repeat scroll center 40px transparent;
+    height: 46px;
+}
+.Topo ul.menubar li.Atual, ul.menubar li.Atual:hover
+{
+    background: url(  "../img/SetaAtual.png" ) no-repeat scroll center 34px transparent;
+}
+.Topo ul.menubar li.Atual2, ul.menubar li.Atual2:hover
+{
+    background: url(  "../img/SetaAtual.png" ) no-repeat scroll center transparent;
+    height: 46px;
+}
+
+.Topo ul.Usuario
+{
+    float: right;
+    color: #FFFFFF;
+}
+
+.Topo ul.Usuario li
+{
+    float: left;
+}
+
+.Topo ul.Usuario li a.Bt
+{
+    background: url(../img/Topo-BtIcones.png);
+    width: 18px;
+    height: 16px;
+    text-indent: -9999px;
+    display: block;
+    margin: 12px 8px;
+    padding: 0;
+}
+
+.Topo ul.Usuario li a.Bt:hover
+{
+    background: url(../img/Topo-BtIcones.png);
+}
+
+.Topo ul.Usuario li a.Salvar
+{
+}
+.Topo ul.Usuario li a.Salvar:hover
+{
+    background-position: 0 -16px;
+}
+.Topo ul.Usuario li a.Email
+{
+    background-position: -18px 0;
+}
+.Topo ul.Usuario li a.Email:hover
+{
+    background-position: -18px -16px;
+}
+.Topo ul.Usuario li a.Imprimir
+{
+    background-position: -36px 0;
+}
+.Topo ul.Usuario li a.Imprimir:hover
+{
+    background-position: -36px -16px;
+}
+.Topo ul.Usuario li a.Cifrao
+{
+    background-position: -54px 0;
+}
+.Topo ul.Usuario li a.Cifrao:hover
+{
+    background-position: -54px -16px;
+}
+.Topo ul.Usuario li a.Fechar
+{
+    background-position: 24px -32px;
+    text-indent: 0;
+    width: 40px;
+    margin: 12px 0 12px 10px;
+    color: #A5C1DC;
+}
+.Topo ul.Usuario li a.Fechar:hover
+{
+    background-position: 24px -48px;
+    color: #FFFFFF;
+}
+
+
+.Topo ul.Usuario li a
+{
+    text-indent: 0;
+    background: none;
+}
+
+.Topo ul.Usuario li.submenu a
+{
+    font-weight: bold;
+}
+.Topo ul.Usuario li.submenu ul
+{
+    width: 170px;
+}
+.Topo ul.Usuario li.submenu ul.UsuarioItens li
+{
+    width: 170px;
+    clear: both;
+}
+.Topo ul.Usuario li.submenu ul.UsuarioItens li a
+{
+    color: #666666;
+    font-weight: normal;
+}
+.Topo ul.Usuario li.submenu ul.UsuarioItens li a:hover
+{
+    color: #333333;
+    background: none;
+}
+
+.LogoProduto
+{
+    float: left;
+    margin: 10px 0 0 0;
+}
+
+.Logotipo
+{
+}
+.Logotipo h1 a
+{
+    width: 149px;
+    height: 46px;
+    text-indent: -9999px;
+    display: block;
+    background: url(../img/Cabecalho-LogoUnitfour.png);
+    margin: 10px 0 0 0;
+    float: left;
+}
+
+.Logotipo .Mascote
+{
+    float: right;
+    width: 720px;
+    margin: 8px 0 0 0;
+}
+
+.Logotipo .Mascote .Texto
+{
+    float: left;
+    background: url(../img/Cabecalho-SetaTexto.jpg) #A5C1DC no-repeat right;
+    height: 39px;
+    padding: 7px 15px 5px 10px;
+    width: 634px;
+}
+
+.Logotipo .Mascote h2 a
+{
+    width: 53px;
+    height: 58px;
+    text-indent: -9999px;
+    display: block;
+    background: url(../img/Cabecalho-IconRobo.jpg);
+    float: right;
+}
+
+.Logotipo .Mascote .Fechar
+{
+    background: url(../img/Topo-BtIcones.png) transparent;
+    background-position: 0 -32px;
+    width: 16px;
+    height: 16px;
+    display: block;
+    text-indent: -9999px;
+    margin: -8px;
+    position: absolute;
+    border: 0;
+}
+.Logotipo .Mascote .Fechar:hover
+{
+    background-position: 0 -48px;
+}
+
+.Meio
+{
+    padding: 0;
+    width: 960px;
+}
+
+.Meio h1
+{
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: #0075C6;
+    margin: 0 0 5px 0;
+    font-weight: normal;
+}
+
+.Meio h2
+{
+    font-size: 14px;
+    margin: 0 0 5px 0;
+    font-weight: normal;
+}
+
+.Meio .Produtos
+{
+    float: left;
+    width: 620px;
+}
+
+.Meio .Produtos div
+{
+    float: left;
+    width: 295px;
+    padding: 20px 15px 0 0;
+    margin-bottom: 39px;
+}
+
+.Meio .Produtos div h3
+{
+    width: 177px;
+    height: 32px;
+    background: url(../img/Meio-LogosProdutos.png);
+    text-indent: -9999px;
+}
+
+.Meio .Produtos div h3.DataFour
+{
+    background-position: 0 0;
+}
+.Meio .Produtos div h3.MetaData
+{
+    background-position: 0 -32px;
+}
+.Meio .Produtos div h3.DataCount
+{
+    background-position: 0 -64px;
+}
+.Meio .Produtos div h3.ClusterBrasil
+{
+    background: url(../img/unitmailing.png) -10px 0;
+    height: 45px;
+}
+.Meio .Produtos div h3.IncentivoUnit
+{
+    background-position: 0 -160px;
+}
+
+
+.Meio .Produtos div p
+{
+    padding: 0 0 0px 38px;
+}
+
+.Meio .Links
+{
+    width: 800px;
+    padding: 0;
+    clear: both;
+}
+
+.Meio .Links p
+{
+}
+
+.Meio .Links div
+{
+    float: left;
+    padding: 0 0px 0 0;
+    width: 160px;
+}
+
+.Meio .Busca
+{
+    display: none;
+}
+
+.Meio .Busca .BuscaAvancada
+{
+    float: right;
+    padding: 5px 10px 0 0;
+    text-align: right;
+    width: 710px;
+}
+*:first-child + html .Meio .Busca .BuscaAvancada
+{
+    float: none;
+    width: 710px;
+    margin-left: 240px;
+}
+*:first-child + html .AccordionOpcoesAvancadas
+{
+    width: 740px;
+    height: 100%;
+}
+
+.Meio .Busca .BuscaAvancada div
+{
+    text-align: left;
+}
+
+.Meio .Busca .BuscaAvancada a
+{
+    font-size: 11px;
+}
+
+.Meio .Busca .BuscaAvancada a.BuscaAvancada{
+    margin: 0 -12px 10px 0;
+}
+
+.Meio .Busca .FormBusca
+{
+    background: none repeat scroll 0 0 #EBEBEB;
+    margin: 19px 0 0 0;
+    padding: 10px 10px 10px 30px;
+    display: block;
+    width: 675px;
+    height: 42px;
+    float: right;
+}
+
+.Meio .Busca .FormBusca .CampoBusca
+{
+    width: 460px;
+    margin: 0 20px;
+    font-size: 16px;
+    padding: 7px;
+    float: left;
+}
+
+.Meio .Busca .FormBusca div
+{
+    float: left;
+}
+
+.Meio .Busca .FormBusca h3
+{
+    font-size: 16px;
+    color: #666666;
+    line-height: 40px;
+    float: left;
+}
+
+.Meio .Consulta
+{
+    float: left;
+    width: 720px;
+    margin: 0;
+}
+
+.Meio h5
+{
+    border-bottom: 1px solid #0079bd;
+    font-size: 18px;
+    font-family:"Open Sans", sans-serif;
+    color: #0079bd;
+    margin: 20px 0 10px 0;
+    padding: 0 0 5px;
+    font-weight:300;
+}
+
+.Meio h3.Junto
+{
+    font-size: 16px;
+    color: #396C9A;
+    margin: 0 0 10px;
+    padding: 0 0 0 10px;
+    line-height: 31px;
+    float: none;
+    clear: both;
+}
+.Meio h3.Junto.ui-accordion-header-active
+{
+    color: #fff;
+}
+.ui-accordion-content div label, .ui-accordion-content div input
+{
+    margin-bottom: 10px;
+    display: block;
+    float: left;
+}
+.ui-accordion-content div label
+{
+    line-height: 25px;
+    width: 130px;
+    text-align: right;
+}
+.ui-accordion-content div input
+{
+    width: 203px;
+}
+
+.Meio .Consulta .Info
+{
+    background: none repeat scroll 0 0;
+    float: left;
+    padding: 6px 0 0 6px;
+    width: 330px;
+}
+
+.Meio .Consulta .Info p
+{
+    float: left;
+    margin: 0 0 10px;
+}
+
+.Meio .Consulta .NovoItem label
+{
+    padding: 0 0 0 15px;
+    font-size: 12px;
+}
+
+.Meio .Consulta .NovoItem
+{
+    padding: 10px;
+    background: #f8f8f8;
+    margin: 0 0 20px 0;
+    clear: both;
+    float: left;
+    display: block;
+    width: 700px;
+    text-align: right;
+}
+
+.BoxLogin
+{
+    float: right;
+    width: 280px;
+    background: url(../img/Login-BgLogo.jpg) #F7F7F7 no-repeat bottom right;
+    padding: 20px;
+}
+
+.Clear
+{
+    clear: both;
+}
+
+.BoxLogin .Cabec
+{
+    height: 60px;
+}
+
+.BoxLogin .Rodape
+{
+    width: 280px;
+    height: 40px;
+    padding: 14px 0 0 0;
+}
+
+.BoxLogin .Rodape .Txt
+{
+    float: left;
+    width: 180px;
+}
+
+.BoxLogin h1
+{
+    width: 150px;
+    height: 43px;
+    text-indent: -9999px;
+    background: url(../img/Login-LogoInTouch.png);
+    float: right;
+}
+
+.BoxLogin h2
+{
+    font: 20px 'UbuntuBold';
+    color: #A0A0A0;
+    float: left;
+}
+
+.BoxLogin h4
+{
+    font-size: 10px;
+    width: 150px;
+    font-weight: normal;
+}
+
+.BoxLogin .Form
+{
+    clear: both;
+    display: block;
+    margin: 0;
+}
+
+.BoxLogin .Form label
+{
+    margin: 10px 0 4px;
+    float: left;
+}
+
+.RedesSociais
+{
+    float: left;
+    width: 27px;
+    height: 44px;
+    margin-left: -15px;
+}
+a.Face
+{
+    background: url(../img/Icon_Face.png);
+    width: 24px;
+    height: 19px;
+    float: left;
+}
+a.Twitter
+{
+    background: url(../img/Icon_Twitter.png);
+    width: 24px;
+    height: 19px;
+    float: left;
+    margin-top: 2px;
+}
+
+.CamposMd
+{
+    border: 1px solid #CECECE;
+    padding: 2px 0 0 4px;
+    margin: 0 16px 0 5px;
+    font: 12px 'UbuntuRegular';
+    border-radius: 2px;
+    height: 26px;
+}
+
+.alertaTratar{
+    float: left;
+    font-family: 'UbuntuMedium';
+    color: red;
+} 
+
+.alertaTratarValido{
+    float: left;
+    font-family: 'UbuntuMedium';
+    color: green;
+}
+
+.CamposMdFloat
+{
+    float: left;
+}
+
+.Campos:focus, .CamposMd:focus
+{
+    border: 1px solid #3B6F9D;
+}
+
+.CamposPq
+{
+    border: 1px solid #CECECE;
+    padding: 0px 0 4px 4px;
+    margin: 0 16px 0 5px;
+    font: 11px 'UbuntuRegular';
+    border-radius: 2px;
+    height: 17px;
+}
+
+.LinhaForm
+{
+    width: 720px;
+    margin: 0 0 10px 0;
+    float: left;
+}
+.Auto
+{
+    width: 335px !important;
+}
+.Central
+{
+    width: 960px;
+    text-align: center;
+}
+.Central p.TotalGeral
+{
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+.Central div
+{
+    padding: 20px 0 0 0;
+}
+
+.Coluna1, .Coluna2
+{
+    width: 300px !important;
+    float: left;
+}
+.Coluna3
+{
+    width: 340px !important;
+    float: right;
+}
+.Coluna1 .LinhaForm
+{
+    width: 280px;
+}
+.Coluna2 .LinhaForm
+{
+    width: 300px;
+    padding: 0 0 0 20px;
+}
+.Coluna3 .LinhaForm
+{
+    width: 340px;
+}
+.LinhaForm .Txt.TextLeft
+{
+    text-align: left;
+}
+.LinhaForm .Txt
+{
+    width: 130px;
+    text-align: right;
+    float: left;
+    margin: 0 0 0 0;
+}
+
+.LinhaForm .Txt2
+{
+    width: 80px;
+    text-align: right;
+    float: left;
+    margin: 0 0 0 0;
+}
+.LinhaForm .Txt3
+{
+    width: 120px;
+    text-align: right;
+    float: left;
+    margin: 0 0 0 0;
+}
+.LinhaForm label
+{
+    line-height: 26px !important;
+    height: 26px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 12px;
+}
+
+table.Resultado
+{
+    width: 720px;
+    float: left;
+    padding: 0 0 3px 0;
+}
+table.Resultado tr
+{
+}
+table.Resultado td
+{
+    /*padding: 8px 0 2px 0;*/
+    padding-top: 6px;
+    border-bottom: 1px solid #EBEBEB;
+    height: 32px;
+    vertical-align:middle;
+    font-size:12px;
+}
+table.Resultado .Estrelas
+{
+    float: left;
+    /*padding: 6px 10px 0 10px;*/
+}
+table.Resultado td.Validacao
+{
+    float: left;
+    padding: 0;
+}
+
+table.Resultado .Validacao tr
+{
+    border: 0;
+}
+
+
+
+.LinhaForm2
+{
+    width: 720px;
+    margin: 10px 0 0 0;
+    float: left;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 0 0 3px 0;
+}
+.LinhaForm2 .Estrelas
+{
+    float: left;
+    padding: 6px 10px 0 10px;
+}
+.LinhaForm2 .Estrelas a
+{
+    background: url(../img/EstrelasBg.png) no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin: 0 4px 0 0;
+}
+
+.LinhaForm2 .Estrelas a.Aceso
+{
+    background-position: 0 0;
+}
+
+.LinhaForm2 .Estrelas a.Apagado
+{
+    background-position: -14px 0;
+}
+
+.LinhaForm2 .Validacao
+{
+    margin: 6px 0 0 0;
+    float: left;
+}
+
+.Validacao td
+{
+    border: 0 !important;
+    padding: 0 4px;
+}
+
+.Btn
+{
+    background: url(../img/BgButton_Intouch.jpg) repeat-x;
+    height: 40px;
+    font: 12px 'UbuntuRegular';
+    color: #FFFFFF;
+    border-radius: 3px;
+    border: 0;
+    font-weight: bold;
+}
+
+.BtnMedio
+{
+    background: url(../img/Btn-BgMedio.png) #577999 no-repeat 0 0;
+    height: 26px !important;
+    font: 12px 'Open Sans';
+    color: #fff;
+    border: 0;
+    padding: 0 7px 0 32px;
+    display: block;
+    line-height: 26px;
+    cursor:pointer;
+}
+
+.BtnMedio:hover
+{
+    text-decoration: none;
+    background-color:#306496;
+}
+
+.BtnConsultar
+{
+    background: url(../img/Btn-BgAgendar.jpg) #A5C1DC no-repeat 0 0;
+    height: 40px;
+    font: 12px 'UbuntuRegular';
+    color: #000;
+    border-radius: 0 3px 3px 0;
+    border: 0;
+    padding: 0 7px 0 48px;
+}
+
+.BtnAnterior
+{
+    background: url(../img/Btn-BgMedio.png) #A5C1DC no-repeat 0 -130px;
+    height: 26px;
+    font: 12px 'UbuntuRegular';
+    color: #000;
+    border-radius: 0 3px 3px 0;
+    border: 0;
+    padding: 0 7px 0 32px;
+    margin: 0 10px;
+}
+
+.BtnProximo
+{
+    background: url(../img/Btn-BgMedio.png) #A5C1DC no-repeat right -156px;
+    height: 26px;
+    font: 12px 'UbuntuRegular';
+    color: #000;
+    border-radius: 3px 0 0 3px;
+    border: 0;
+    padding: 0 32px 0 7px;
+    margin: 0 10px;
+}
+
+.Right
+{
+    float: right;
+}
+.Left
+{
+    float: left;
+    height: 26px;
+}
+
+.Login
+{
+    padding: 10px !important;
+    margin: 0 !important;
+}
+
+.BtnPeq
+{
+    width: 80px;
+}
+
+.BtnMed
+{
+    width: 150px;
+    float: right;
+}
+
+.BtnGde
+{
+    width: 220px;
+    float: right;
+}
+
+.Grande460
+{
+    width: 460px;
+}
+.Grande380
+{
+    width: 380px;
+}
+.Medio
+{
+    width: 258px;
+}
+.Medio200
+{
+    width: 190px;
+}
+.Pequeno
+{
+    width: 53px;
+}
+.Pequeno2
+{
+    width: 120px;
+}
+.Pequeno3
+{
+    width: 66px;
+}
+.Pequeno4
+{
+    width: 100px;
+}
+.Pequeno5
+{
+    width: 55px;
+}
+.AtualizarStatus
+{
+    width: 130px;
+    background-position: 0 -26px;
+}
+.Pequeno40
+{
+    width: 40px;
+}
+.Pequeno150
+{
+    width: 150px;
+}
+.Pequeno160
+{
+    width: 160px;
+}
+.Pequeno26
+{
+    width: 26px;
+    padding: 0 !important;
+    background-position: 0 -104px;
+    margin: 0 30px 0 0;
+}
+.Pequeno26-2
+{
+    width: 26px;
+    padding: 0 !important;
+    background-position: 0 -104px;
+    margin: 0 20px 0 0;
+}
+
+.BtnBuscar3
+{
+    width: 26px;
+    padding: 0 !important;
+    background-position: 0 -52px;
+    margin: 0px 10px 4px 0;
+    float: right;
+}
+
+.BtnBuscar2
+{
+    width: 26px;
+    padding: 0 !important;
+    background-position: 0 -52px;
+    margin: 0px 10px -1px 0;
+    float: right;
+}
+
+.BtnBuscar
+{
+    width: 26px;
+    padding: 0 !important;
+    background-position: 0 -52px;
+    margin: 5px 10px 0 5;
+    position: relative;
+    right: -15px;
+    top: 0;
+}
+
+.BtnBuscar5
+{
+    width: 26px;
+    padding: 0 !important;
+    background-position: 0 -52px;
+    margin: 0px -10px 0 0;
+    position: absolute;
+    right: -15px;
+    top: 0;
+}
+
+.BtnBuscarVizinhos
+{
+    width: 26px;
+    height: 26px;
+    padding: 0 !important;
+    margin: 0px 10px 4px 0;
+    background: url(../img/vizinhos.png) no-repeat 0px 0px;
+    display: block;
+}
+
+.BtnNovoItem
+{
+    width: 26px;
+    padding: 0 !important;
+    background-position: 0 -78px;
+    margin: 0;
+    float: right;
+}
+
+.Radio
+{
+    padding: 4px 0 0 7px;
+    float: left;
+}
+.Radio2
+{
+    padding: 0 0 0 0;
+    float: left;
+}
+
+span.RadioSpan
+{
+    padding: 0 0 0 10px;
+}
+span.RadioSpan label
+{
+    padding: 0 8px 0 3px !important;
+}
+
+.Label2
+{
+    padding: 0 7px 10px 3px !important;
+    float: left;
+}
+
+
+.RodapeAuto
+{
+    width: auto;
+    background: #EBEBEB;
+    clear: both;
+    margin: 30px 0 0;
+}
+
+.Rodape
+{
+    width: 960px;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.Rodape p
+{
+    line-height: 40px;
+    font-size: 10px;
+    float: left;
+    color: #9F9F9F;
+}
+
+.Rodape h1 a
+{
+    width: 74px;
+    height: 22px;
+    background: url(  "../img/Site-LogosUnifour.png" );
+    float: right;
+    text-indent: -9999px;
+    margin: 8px 0 0;
+}
+
+.Table700, .Table960, .visualizar, .TableCinza
+{
+    padding: 0;
+    background: #F8F8F8;
+}
+
+.Table700
+{
+    width: 720px;
+}
+.Table960, .TableCinza
+{
+    width: 960px;
+}
+.TableTxt10
+{
+    font-size: 10px;
+}
+.visualizar
+{
+    width: 99%;
+    font-size: 10px;
+    margin: 16px 0 0 0;
+}
+
+.Table700 thead, .Table700 .Header, .Table960 thead, .Table960 .Header, .visualizar .Header, .Resultado .Header
+{
+    background: #3B6F9D;
+    border-collapse: collapse;
+    color: #FFFFFF !important;
+}
+
+.Header td a
+{
+    color: #FFFFFF !important;
+    font-size: 12px !important;
+}
+
+.Footer td a
+{
+    color: #FFFFFF !important;
+    font-size: 12px !important;
+}
+
+.TableCinza .Header
+{
+    background: #999999;
+    border-collapse: collapse;
+    color: #FFFFFF;
+}
+
+.TableCinza .Header a
+{
+    color: #FFFFFF;
+}
+
+.TableTxt10 .Header td
+{
+    padding: 10px 4px !important;
+}
+.TableCinza .Header td
+{
+    padding: 7px !important;
+}
+.Table960TxtMenor td
+{
+    padding: 7px 4px !important;
+}
+
+.Table700 td, .Table960 td, .TableTxt10 td
+{
+    padding: 7px 10px 10px 3px;
+    border-bottom: 1px solid #3B6F9D;
+    font-size: 11px;
+}
+
+.TableCinza td
+{
+    padding: 7px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.Table960 .Footer
+{
+    background: #FFFFFF;
+    text-align: center;
+}
+
+.Table960 .Footer span
+{
+    background: #A5C1DC;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 20px;
+    width: 100px;
+}
+
+.Table960 .Footer a
+{
+    background: #3B6F9D;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 20px;
+    width: 100px;
+    color: #FFFFFF;
+}
+
+.Table960 .Footer td
+{
+    border: 0;
+    padding: 16px 0 20px !important;
+}
+
+.visualizar td
+{
+    padding: 10px 6px;
+    border-bottom: 1px solid #3B6F9D;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+}
+
+TableTxt10 td
+{
+    padding: 8px 4px;
+}
+
+.visualizar .Coluna3
+{
+    width: 200px !important;
+    float: left;
+    text-align: left;
+}
+
+.visualizar .Coluna4
+{
+    width: 430px;
+    float: right;
+    text-align: left
+}
+
+.Table700 tr.Listra, .Table960 tr.Listra, .visualizar .Listra, .TableTxt10 tr.Listra
+{
+    background: #EBEBEB !important;
+}
+
+.TableCinza tr.Listra
+{
+    background: #EDEDED !important;
+}
+
+.ModalLayout
+{
+    background: url(../img/Modal_BgCabecalho.jpg) top no-repeat #FFFFFF;
+    width: 660px;
+    padding: 20px;
+    height: 400px;
+    overflow: auto;
+}
+
+.ModalLayout h1
+{
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+
+.ModalLayout a
+{
+}
+
+.ModalLayout div.Right
+{
+    float: right;
+    width: 120px;
+    text-align: right;
+}
+
+.ModalLayout .BuscaCEP
+{
+    clear: both;
+    padding: 0 0 30px;
+}
+
+.BtBuscaCEP
+{
+    margin: 0 0 -9px -9px;
+}
+.BtSalvar
+{
+    margin: 0 0 0 10px;
+}
+
+.ModalLayout ul.Botoes
+{
+    clear: both;
+    float: right;
+    color: #FFFFFF;
+}
+
+.ModalLayout ul.Botoes li
+{
+    float: left;
+}
+
+.ModalLayout ul.Botoes li .Edit
+{
+    float: left;
+    margin: 20px 0 0 8px;
+}
+
+.ModalLayout ul.Botoes li.SalvarCancelar .ic_funcao1
+{
+    width: 30px !important;
+}
+
+.ImgSpc
+{
+    margin: 0 0 0 124px;
+}
+
+.ModalLayout ul.Botoes li.SalvarCancelar
+{
+    float: left;
+    margin: 20px 0 0 8px;
+}
+
+
+.ModalLayout ul.Botoes li a.Bt
+{
+    background: url(../img/Topo-BtIcones.png);
+    width: 18px;
+    height: 16px;
+    text-indent: -9999px;
+    display: block;
+    margin: 20px 0 0 10px;
+    padding: 0;
+}
+
+.ModalLayout ul.Botoes li a.Salvar
+{
+    background-position: 0 -16px;
+}
+.ModalLayout ul.Botoes li a.Email
+{
+    background-position: -18px -16px;
+}
+.ModalLayout ul.Botoes li a.Imprimir
+{
+    background-position: -36px -16px;
+}
+.ModalLayout ul.Botoes li.Edit
+{
+}
+
+.Avancadas
+{
+    width: 680px;
+    background: url(../img/Avancadas_BgGeral.jpg) top no-repeat #A5C1DC;
+    padding: 33px 20px 20px 20px;
+    float: left;
+    margin: 0 0 20px 0;
+}
+
+.Avancadas .Cabecalho
+{
+    height: 26px;
+    margin: 5px 0 0;
+}
+
+.Avancadas h1, .Avancadas h2
+{
+    margin: 0 94px 0 0;
+    float: left;
+}
+
+.Avancadas h1
+{
+    color: #001E46;
+    font-size: 16px;
+    margin-top: -8px;
+}
+
+.Avancadas h2
+{
+    font-size: 12px;
+    margin: -15px 0 0 20px;
+}
+
+.Avancadas input[type=radio]
+{
+    margin: 0 5px 0 20px;
+}
+
+.Avancadas .Filtros
+{
+    padding: 0px;
+}
+
+.Avancadas .Filtros ul
+{
+    margin: 0 0 0 1px;
+    padding: 0;
+    background: #5E88AD;
+    float: left;
+    width: 678px;
+}
+
+.Avancadas .Filtros ul li
+{
+    display: inline;
+    float: left;
+    width: 128px;
+    text-align: center;
+    border-right: 1px solid #A5C1DC;
+}
+
+.Avancadas .Filtros ul li a
+{
+    color: #FFFFFF;
+    line-height: 30px;
+}
+
+.CamposFiltros h3
+{
+    font-size: 14px;
+    color: #001E46;
+    padding: 10px 0;
+    width: 680px;
+}
+
+.CamposFiltros .LinhaForm
+{
+    width: 700px;
+}
+
+.CamposFiltros .LinhaForm .Txt
+{
+    padding: 4px 3px 0 0;
+}
+
+.LimparCampos
+{
+    background: #DEDEDE;
+    float: right;
+    margin: 0 20px 0 0;
+    padding: 5px 8px;
+    border-radius: 3px;
+}
+
+#DIV_POR_NOME, #DIV_POR_TELEFONE, #DIV_POR_CEP, #DIV_POR_ENDERECO, #DIV_PLACA_VEICULO, #DIV1, #beneficioOutro
+{
+    margin: 0px 0 -10px 0;
+    padding: 12px 0 0 0;
+    float: left;
+    background: url(../img/Avancadas_SetaOpçao.jpg) no-repeat;
+}
+
+#DIV_POR_NOME{
+    background-position: 52px 0 !important;
+}
+#DIV_POR_TELEFONE{
+    background-position: 181px 0 !important;
+}
+#DIV_POR_CEP{
+   background-position: 309px 0 !important;
+}
+#DIV_POR_ENDERECO{
+    background-position: 437px 0 !important;
+}
+#beneficioOutro{
+    background-position: 567px 0 !important;
+}
+#DIV1{
+    background-position: 607px 0 !important;
+}
+
+.TotalConsultas
+{
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    float: left;
+    width: 960px;
+    margin: 20px 0 10px 0;
+}
+
+.TotalConsultas p
+{
+    text-align: right;
+}
+
+.TotalConsultas span a
+{
+    padding: 7px;
+    display: block;
+}
+
+.BannersHome
+{
+    width: 960px;
+    padding: 20px 0 0 0;
+    clear: both;
+    display: none;
+}
+
+.BannersHome .BannerDefault
+{
+    float: left;
+    width: 720px;
+}
+
+.BannersHome .BannerCampanha
+{
+    float: right;
+    width: 220px;
+    margin: -48px 0 0;
+}
+
+.BannersHome .CampanhaResult
+{
+    float: left;
+    position: relative;
+    width: 720px;
+    height: 231px;
+    color: #FFFFFF;
+    background: url(../img/Bg_CampanhaResult.jpg);
+}
+
+.BannersHome .CampanhaResult div.Txt
+{
+    position: absolute;
+    right: 163px;
+    top: 0px;
+    width: 380px;
+    margin-top: 17px;
+}
+
+.BannersHome .CampanhaResult div.Txt h1
+{
+    font-size: 30px;
+    line-height: 28px;
+    color: white;
+    font-weight: normal;
+    font-family: 'UbuntuRegular';
+}
+
+.BannersHome .CampanhaResult div.Txt h2
+{
+    font-size: 13px;
+    margin: 13px 0;
+    color: white;
+    font-family: 'UbuntuRegular';
+    font-weight: normal;
+}
+
+.BannersHome .CampanhaResult .DataSorteio
+{
+    height: 47px;
+    position: absolute;
+    right: 380px;
+    top: 171px;
+    width: 165px;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 6px;
+}
+
+.BannersHome .CampanhaResult table.Lista
+{
+    height: 48px;
+    position: absolute;
+    right: 10px;
+    top: 174px;
+    width: 365px;
+    color: #000000;
+    font-size: 10px;
+    line-height: 25px;
+    letter-spacing: -1px;
+}
+
+.BannersHome .CampanhaResult table.Lista tr td
+{
+    text-align: center;
+}
+
+.opcional
+{
+    width: 690px;
+    height: 63px;
+    background: url(../img/img-opcional.png);
+    line-height: 19px;
+    padding: 15px;
+    float: left;
+    color: #fff;
+    margin: 0 0 20px;
+}
+.opcional h2
+{
+    color: #FFFFFF;
+    font-size: 19px;
+}
+
+.opcional a
+{
+    color: #fff;
+}
+.opcional strong
+{
+    color: #FFFFFF;
+    font-family: 'UbuntuBold';
+}
+
+.opcionalformata
+{
+    clear: both;
+    float: left;
+    font: 13px 'UbuntuRegular';
+    margin: 13px 0 0;
+    width: 370px !important;
+}
+
+.opcionalformataCpf
+{
+    float: left;
+    font: 15px/4px 'UbuntuBold';
+    margin: 12px -5px 0 0;
+    padding: 8px;
+    color: #133963;
+}
+.opcionalformata1
+{
+    float: left;
+    margin: 5px 5px 0 5px !important;
+    font: 15px 'UbuntuRegular';
+    padding: 3px 5px !important;
+    color: #666;
+    border: 1px solid #CECECE;
+    border-radius: 3px;
+}
+.btn-continuar
+{
+    float: left;
+    margin: 0px 0px 0 -1px;
+    width: 80px;
+    line-height: 13px;
+    padding: 8px 14px;
+    height: 42px;
+}
+
+
+/*Ajax consulta INSS*/
+
+.ajax__tab_xp .ajax__tab_body
+{
+    background-color: #FFFFFF;
+    border-color: -moz-use-text-color #999999 #999999;
+    border-right: 1px solid #999999;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    font: 11px 'UbuntuRegular' !important;
+    padding: 8px;
+}
+.ajax__tab_xp .ajax__tab_active .ajax__tab_tab, .ajax__tab_xp .ajax__tab_tab
+{
+    font: 12px 'UbuntuBold' !important;
+}
+
+.tab_inadimplencia.ajax__tab_xp .ajax__tab_active .ajax__tab_tab, .ajax__tab_xp .ajax__tab_tab
+{
+    font: 12px 'UbuntuRegular' !important;
+}
+
+.modalMsg
+{
+    width: 500px;
+    height: 90px;
+    border: 0 none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background: #fff;
+    color: #1a1a1a;
+}
+.modalMsgComunicacao
+{
+    height: 303px !important;
+    width: 960px !important;
+    border: 0 none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background: #fff;
+    color: #1a1a1a;
+}
+
+.modalMsg img, .modalMsg span
+{
+    display: block;
+}
+.modalMsg span
+{
+    clear: both;
+    line-height: 2;
+    padding: 5px;
+}
+.modalMsg-topo
+{
+    width: 400px;
+    height: 30px;
+    padding: 5px;
+    background: #ccc;
+}
+
+.boxInss
+{
+    background-color: #bbcce5;
+    padding: 5px;
+    color: #2a4b83;
+}
+.boxInss u
+{
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.boxInss table td
+{
+    padding-left: 5px;
+}
+
+.BoxAtualizeHome
+{
+    border: 17px solid #D6E2EE;
+    margin: 48px 0 0;
+}
+
+.BoxAtualizeHome .MeioBoxAtualize
+{
+    height: 124px;
+}
+
+.RelatorioAgendado
+{
+    margin: 2px 0 0 3px;
+}
+
+
+div.InfoEmValidacao
+{
+    background: url(../img/InfoEmValidacao.png) no-repeat right;
+    overflow: hidden;
+    margin: 0 0 -9px;
+}
+
+td.IEVTelefone
+{
+    width: 108px;
+}
+
+div.Legenda
+{
+}
+
+div.Legenda h1
+{
+    color: #3B6F9D;
+}
+
+div.Legenda ul
+{
+    border: 1px solid #3B6F9D;
+    border-collapse: collapse;
+    margin: -2px 0 0 0px;
+    overflow: hidden;
+    width: 198px;
+    padding: 14px 10px 10px 0px;
+}
+
+div.Legenda ul li
+{
+    padding: 0 0 0 42px;
+    line-height: 22px;
+    height: 20px;
+    margin: 0 0 5px 0;
+    color: #3B6F9D;
+}
+
+div.Legenda ul li.InfoEmValidacao
+{
+    background: url(../img/InfoEmValidacao.png) no-repeat 17px 0px;
+}
+
+.LabelObito
+{
+    margin-top: 10px;
+}
+.LabelObito b
+{
+    font-weight: bold;
+}
+
+.Parentes
+{
+    margin-bottom: 10px;
+    background: #f8f8f8;
+}
+.Parentes span {
+    display:block;
+    font-size:14px;
+    font-weight:400;
+    padding:6px;
+    line-height: 20px;
+    font-family:"Open Sans", sans-serif;
+}
+
+.BtnPeqCheck
+{
+    background: url(../img/Btn-BgPeq.png) #36892a no-repeat 0 0;
+    height: 20px !important;
+    font: 12px 'Open Sans';
+    color: #fff;
+    border: 0;
+    padding: 0 7px 0 32px;
+    display: block;
+    line-height: 20px;
+    margin:6px 6px 0 0;
+    display:block;
+    float:left;
+}
+
+.overflow-normal
+{
+    overflow: visible;
+}
+
+.BtnPeqCheck:hover {
+    color:#fff;
+    text-decoration:none;
+    background-color: #0D6800;
+}
+
+.BtnPeqCancel
+{
+    background: url(../img/Btn-BgPeq.png) #F34141 no-repeat 0 0;
+    height: 20px !important;
+    font: 12px 'Open Sans';
+    color: #fff;
+    border: 0;
+    padding: 0 7px 0 32px;
+    display: block;
+    line-height: 20px;
+    background-position: 0 -116px;
+    margin:6px 6px 0 0;
+    display:block;
+    float:left;
+}
+
+.BtnPeqCancel:hover {
+    color:#fff;
+    text-decoration:none;
+    background-color: #C20202;
+}
+
+.BtnPeqEditar {
+    background: url(../img/Btn-BgPeq.png) #A5C1DC no-repeat 0 0;
+    height: 20px !important;
+    font: 12px 'UbuntuRegular';
+    color: #000;
+    border-radius: 3px;
+    padding: 0 7px 0 32px;
+    border: 0;
+    display: block;
+    line-height: 20px;
+    background-position: 0 -96px;
+    margin: 6px 6px 0 0;
+}
+
+.validacao-img
+{
+    width: 34px;
+    text-align: center;
+    line-height: 1em;
+}
+.floatl
+{
+    float: left;
+}
+.home-slider-dinamic
+{
+    
+    clear: both;
+}
+.home-slider-dinamic h1
+{
+    font-size: 28px;
+    color: #163556;
+    font-family: 'UbuntuBold';
+}
+.ui-tabs
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ui-tabs .ui-tabs-hide
+{
+    display: none;
+}
+.ui-state-active.ui-state-default
+{
+    background-position: 0px 0px;
+    z-index: 2;
+}
+.ui-state-default
+{
+    display: block;
+    float: left;
+    width: 136px;
+    height: 29px;
+    background: url('../img/home-sprite-news.png') no-repeat -143px 0px;
+    margin-left: -20px;
+    position: relative;
+    z-index: 1;
+}
+.ui-state-default a
+{
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    font-family: 'UbuntuMedium';
+    line-height: 32px;
+}
+.ui-state-default a:hover
+{
+    text-decoration: none;
+}
+.ui-state-default:first-child
+{
+    margin-left: 0;
+}
+.ui-tabs-selected
+{
+    background: url('../img/home-sprite-news.png') no-repeat;
+    z-index: 2;
+}
+.ui-tabs-panel
+{
+    clear: both;
+    border: 1px solid #d0d7dd;
+    padding: 20px;
+}
+.menu-new-viewer
+{
+    float: left;
+    width: 230px;
+    margin-right: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #cbcbcb;
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgb(255,255,255) 0%, rgb(217,217,217) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(255,255,255)), color-stop(100%,rgb(217,217,217))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgb(255,255,255) 0%,rgb(217,217,217) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgb(255,255,255) 0%,rgb(217,217,217) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgb(255,255,255) 0%,rgb(217,217,217) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(217,217,217) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d9d9d9',GradientType=0 ); /* IE6-9 */
+}
+.menu-new-viewer li
+{
+    margin: 0 15px;
+    padding: 12px 0;
+    border-top: 1px solid #c5c5c5;
+    cursor: pointer;
+}
+.menu-new-viewer li:hover
+{
+    opacity: 0.8;
+}
+.menu-new-viewer li:first-child
+{
+    border-top: 0 none;
+}
+.menu-new-viewer li.active
+{
+    margin: 0;
+    padding: 12px 15px;
+    background: #5688ba;
+}
+.menu-new-viewer li span
+{
+    color: #396d9d;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    font-size: 13px;
+    letter-spacing: -1px;
+}
+.menu-new-viewer li.active span
+{
+    color: #fff;
+}
+.menu-new-viewer li span.icone
+{
+    width: 20px;
+    background: url('../img/menuLateralIconesSprite.png') no-repeat;
+    margin-right: 12px;
+}
+.menu-new-viewer li span.ico-telefones
+{
+    background-position: 0px -20px;
+}
+.menu-new-viewer li span.ico-obito
+{
+    background-position: 0px -60px;
+}
+.menu-new-viewer li span.ico-perfilsocio
+{
+    background-position: 0px -80px;
+}
+.menu-new-viewer li span.ico-perfilconsumo
+{
+    background-position: 0px -100px;
+}
+.menu-new-viewer li span.ico-contatosruins
+{
+    background-position: 0px -140px;
+}
+.menu-new-viewer li span.ico-ccf
+{
+    background-position: 0px -160px;
+}
+.menu-new-viewer li span.ico-ligacoes
+{
+    background-position: 0px -180px;
+}
+
+.menu-new-viewer li span.name
+{
+    width: 148px;
+}
+.menu-new-viewer li span.seta
+{
+    width: 20px;
+    background: url('../img/home-sprite-news.png') no-repeat 0px -45px;
+}
+.menu-new-viewer li.active span.seta
+{
+    background-position: -23px -45px;
+}
+.description, .tags
+{
+    float: left;
+}
+.content-viewer h3
+{
+    color: #5688ba;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-family: 'UbuntuMedium';
+    font-size: 20px;
+    border-bottom: 1px solid #d0d7dd;
+}
+.description
+{
+    margin-right: 20px;
+    width: 256px;
+}
+.description p
+{
+    margin-bottom: 20px;
+}
+.description a
+{
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    border: 1px solid #30548f;
+    width: 212px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    background: rgb(61,109,155); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgb(61,109,155) 0%, rgb(25,62,106) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(61,109,155)), color-stop(100%,rgb(25,62,106))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgb(61,109,155) 0%,rgb(25,62,106) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgb(61,109,155) 0%,rgb(25,62,106) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgb(61,109,155) 0%,rgb(25,62,106) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgb(61,109,155) 0%,rgb(25,62,106) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d6d9b', endColorstr='#193e6a',GradientType=0 ); /* IE6-9 */
+}
+.description a:hover
+{
+    text-decoration: none;
+    background: rgb(25,62,106);
+}
+.tags
+{
+    width: 390px;
+}
+.tags span
+{
+    border-radius: 5px;
+    display: block;
+    float: left;
+    margin: 0 12px 12px 0;
+    background: #163556;
+    padding: 10px;
+    color: #fff;
+}
+.ui-accordion-header
+{
+    display: block;
+    float: none;
+    background: #ebebeb;
+    width: 710px;
+    color: #5e88ad;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 0 0 5px;
+    line-height: 29px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.ui-accordion-header.ui-state-active
+{
+    background: #5E88AD;
+    color: #fff;
+}
+.ui-accordion-content
+{
+    margin-bottom: 20px;
+}
+#accordion td, #accordionSitCad td
+{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+}
+.consultas-realizadas
+{
+    font-size: 18px;
+    line-height: 2;
+    margin-top: 20px;
+}
+.style-table td
+{
+    border: 1px solid #EBEBEB;
+}
+.AlinhamentoConteudo
+{
+    text-align: right;
+}
+
+/* Banner Aviso - Novos Produtos */
+
+div.BannerAviso
+{
+    width: 960px;
+    height: 302px;
+    overflow: hidden;
+}
+
+div.NovosProdutos
+{
+    color: #FFFFFF;
+    background: url("../img/Bg_BoxAviso_NovosProdutos.jpg") no-repeat;
+}
+
+div.Aviso
+{
+    width: 446px;
+    float: right;
+    margin: 20px 20px 0 0;
+}
+
+div.Aviso h1
+{
+    font: 20px "UbuntuBold";
+    margin: 0px 0 10px 0;
+}
+
+div.Aviso p
+{
+    font-size: 17px;
+    margin: 0 0 10px 0;
+    line-height: 21px;
+    padding: 0;
+}
+
+div.Contato
+{
+    clear: both;
+    padding: 20px 23px 0 27px;
+}
+
+div.Contato span.Txt, div.Contato span.Email
+{
+    font-size: 18px;
+}
+
+div.Contato span.Email a
+{
+    margin: 0 0 0 17px;
+    color: #FFFFFF;
+    font-family: "UbuntuBold";
+}
+
+div.Contato span.Telefone
+{
+    font: 24px "UbuntuBold";
+    padding: 0 27px;
+}
+
+.modalPerfilMaster
+{
+    height: 303px !important;
+    width: 960px !important;
+}
+
+.fecharModalPerfil
+{
+    background: none !important;
+    width: 20px;
+    position: absolute;
+}
+
+.colunaIdade
+{
+    text-align: right;
+}
+
+/* Banner Aviso - Novos Produtos */
+
+.tab_recursos{
+    clear:both;
+    padding:16px 10px;
+    margin-top:28px;
+    width:100%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    /*background: #7fc0e8;*/
+    border-radius:5px;
+    float: left;
+    /*overflow:hidden;*/
+}
+.tab_recursos h3 {
+    font-family: 'UbuntuLight';
+    color:#fff;
+    font-size:34px;
+    float:left;
+    width: 484px;
+}
+.tab_recursos span {
+    font-family: 'UbuntuLight';
+    color:#fff;
+    font-size:20px;
+    float:left;
+    line-height: 33px;
+}
+.tipo_usuario_tab ul li a {
+    display:block;
+    float:left;
+    text-decoration:none;
+    font-family: 'UbuntuLight';
+    color:#fff;
+    width:124px;
+    height:32px;
+    background:#3894cd;
+    border-radius:5px;
+    text-align:center;
+    line-height:32px;
+    margin-left:10px;
+}
+.tipo_usuario_tab ul li.ui-tabs-active a,
+.tipo_usuario_tab ul li a:hover {
+    background:#005abc;
+}
+.view_hightlights {
+    clear:both;
+    margin-top:15px;
+    width:100%;
+    float:left;
+    border: 0 none;
+    padding: 0;
+    margin-bottom: 0;
+}
+.view_hightlights ul {
+    overflow:hidden;
+    border-radius:5px;
+    width:258px;
+    float:left;
+}
+.view_hightlights ul li a {
+    float:none;
+    border-radius:0;
+    width:100%;
+    margin-left:0;
+    font-size:13px;
+    color:#2c2c2c;
+    background:#bfe0f4;
+    text-align:left;
+}
+.view_hightlights ul li.ui-tabs-active a{
+    background:#3f8dd2;
+    color:#fff;
+}
+.view_hightlights ul li a:hover {
+    color:#fff;
+    background:#005abc;
+}
+.view_hightlights ul li a span {
+    display:block;
+    background:#125abc url(../img/sprite.png) no-repeat;
+    width:22px;
+    height:22px;
+    margin: 5px 5px 0;
+    border-radius: 3px;
+}
+.view_hightlights ul li.ui-tabs-active a span{
+    background-color:#3f8dd2;
+}
+.view_hightlights ul li a:hover span {
+    background-color:#005abc;
+}
+.view_hightlights ul li#link-localizacao a span,
+.view_hightlights ul li#link-localizacao_b a span {
+    background-position: -16px -82px;
+}
+.view_hightlights ul li#link-mais_telefones a span,
+.view_hightlights ul li#link-mais_telefones_b a span {
+    background-position: -16px -114px;
+}
+.view_hightlights ul li#link-obito a span {
+    background-position: -16px -145px;
+}
+.view_hightlights ul li#link-perfil_sociodemografico a span,
+.view_hightlights ul li#link-perfil_sociodemografico_b a span {
+    background-position: -16px -177px;
+}
+.view_hightlights ul li#link-perfil_consumo a span {
+    background-position: -16px -208px;
+}
+.view_hightlights ul li#link-contatos_ruins a span,
+.view_hightlights ul li#link-contatos_ruins_b a span {
+    background-position: -16px -240px;
+}
+.view_hightlights ul li#link-ccf a span,
+.view_hightlights ul li#link-ccf_b a span {
+    background-position: -16px -271px;
+}
+.view_hightlights ul li#link-pessoas_empresas_ligadas a span {
+    background-position: -16px -301px;
+}
+.the_hightlight {
+    float:left;
+    margin-left:20px;
+    width: 644px;
+    clear:none;
+    padding:0;
+    border:0 none;
+}
+.the_hightlight h4 {
+    font-size: 22px;
+    font-family:'UbuntuBold';
+    color:#005abc;
+    padding-bottom:10px;
+    border-bottom:1px solid #fff;
+}
+.link_comprar {
+    float:left;
+    margin:20px 0 0 20px;
+    width: 646px;
+}
+.link_comprar_pj {
+    margin-left: 280px;
+}
+.link_comprar h4 {
+    float:left;
+    color:#005abc;
+    font-size: 18px;
+    font-family: 'UbuntuBold';
+    width: 388px;
+    line-height: 58px;
+    letter-spacing:-1px;
+}
+.link_comprar a {
+    float:left;
+    color:#fff;
+    text-decoration:none;
+    width:258px;
+    height:58px;
+    text-align:center;
+    display:block;
+    line-height:58px;
+    font-size:24px;
+    background:#005abc;
+    border-radius:5px;
+}
+.high_collumn{
+    float:left;
+    width: 360px;
+    height: 145px;
+}
+.high_collumn.tags{
+    width:258px;
+    margin-left:20px;
+}
+.high_collumn p {
+    font-size:15px;
+    line-height:20px;
+    font-family: 'UbuntuLight';
+    color:#2c2c2c;
+    margin-top:10px;
+    height: 87px;
+}
+.price .value {
+    display:block;
+    float:left;
+    color:#fff;
+    font-family:'UbuntuBold';
+    font-size:42px;
+    padding:0 22px 0 18px;
+    border-radius:5px;
+    height:48px;
+    line-height: 54px;
+    background:#3894cd;
+}
+.price .value small {
+    font-size:17px;
+}
+.price .per_consult {
+    display:block;
+    float:left;
+    color:#4d4d4d;
+    font-size:22px;
+    font-family: 'UbuntuLight';
+    margin-left:10px;
+    line-height: 44px;
+}
+.tags span {
+    display:block;
+    float:left;
+    border-radius:3px;
+    font-size:13px;
+    color:#4d4d4d;
+    margin:10px 10px 0 0;
+    background:#bfe0f4;
+    padding: 7px 9px 6px;
+    font-family: 'UbuntuRegular';
+    line-height: 1;
+}
+.mensagem {
+    float: right;
+    border: 1px solid red;
+    background: #fcaeae url('../Img/sprite.png') no-repeat -11px -509px;
+    margin: 18px 10px 0 0;
+    padding: 15px 15px 15px 40px;
+    width: 573px;
+    text-align: left;
+    display:none;
+}
+.mensagem p {
+    color:#c40909;
+}
+.tipo_usuario_tab {
+    margin:0;
+}
+.tipo_usuario_tab ul li.ui-state-active.ui-state-default{
+    background:none;
+}
+.tipo_usuario_tab ul li.ui-state-default{
+    background:none;
+    margin-left:0;
+}
+.view_hightlights ul li {
+    float:none;
+    width:100%;
+    height:auto;    
+}
+
+/*Inadimplencia*/
+.inadimplencia_section h1{
+    color:#396C99;
+    font-size:16px;
+    font-family:"UbuntuBold";
+    letter-spacing:-1px;
+    line-height:1.2;
+    border-bottom:1px solid #396C99;
+    margin-bottom:20px;
+}
+.inadimplencia_section .tabela_resumo {
+    width:374px;
+    float:left;
+    margin-right:32px;
+    margin-bottom:32px;
+}
+.inadimplencia_section .tabela_resumo table {
+    width:100%;
+}
+.inadimplencia_section .tabela_resumo table td {
+    padding:8px;
+    border-top:1px solid #396C99;
+    border-bottom:1px solid #396C99;
+    font-size:13px;
+    color:#666666;
+    letter-spacing:-1px;
+}
+
+.inadimplencia_section .tabela_resumo table td span.value {
+    display:block;
+    text-align:right;
+    font-family:"UbuntuBold";
+}
+.inadimplencia_section .detalhes_resumo {
+    width: 314px;
+    float:left;
+}
+.inadimplencia_section .detalhes_resumo p {
+    font-size:15px;
+    line-height:1.2;
+    margin-bottom:32px;
+    letter-spacing:-1px;
+    color:#666666;
+}
+.inadimplencia_section .detalhes_resumo p small{
+    font-size:13px;
+    letter-spacing:0;
+}
+.inadimplencia_section .detalhes_resumo .ver-detalhes-inadimplencia {
+    background: url(../img/btn-more.png) no-repeat;
+    display:block;
+    width: 85px;
+    height: 14px;
+    padding: 12px 18px;
+    margin-top: 108px;
+    cursor: pointer;
+    font-size: 13px;
+}
+.inadimplencia_section .tabs-inadimplencia .ui-state-default {
+    width:auto;
+    margin:0 1px 0 0;
+    background:#CEDBE6;
+}
+.inadimplencia_section .tabs-inadimplencia .ui-state-active {
+    margin-top:-2px;
+    height: 31px;
+    background:#5E88AD;
+}
+.inadimplencia_section .tabs-inadimplencia .ui-state-default a{
+    padding: 0 9px;
+    color:#666666;
+    font-size:13px;
+    font-family:"UbuntuRegular";
+}
+.inadimplencia_section .tabs-inadimplencia .ui-state-active a {
+    line-height:32px;
+    padding: 0 14px;
+    color:#fff;
+}
+.inadimplencia_section .tabs-inadimplencia .ui-tabs-panel{
+    border:1px solid #5E88AD;
+    padding:15px;
+}
+.inadimplencia_section .table-normal{
+    width:100%;
+    border-bottom:3px solid #999999;
+}
+.inadimplencia_section .table-normal thead {
+    background: #999999;
+}
+.inadimplencia_section .table-normal td,
+.inadimplencia_section .table-normal th{
+    padding:8px;
+    text-align:left;
+    color:#666666;
+    border-top:1px solid #999999;
+    border-bottom:1px solid #999999;
+    font-size: 13px;
+}
+.inadimplencia_section .table-normal th{
+    color:#fff;
+    font-family: "Open Sans";
+    font-size: 13px;
+}
+.inadimplencia_section p.legend {
+    float:left;
+    font-family:"Open Sans";
+    font-size:13px;
+    margin-bottom: 15px;
+    padding: 0;
+    font-weight:700;
+}
+.inadimplencia_section .multi-content{
+    width:100%;
+}
+.inadimplencia_section .multi-content td {
+    padding:8px;
+    text-align:left;
+    line-height:1.4;
+    font-size: 12px;
+    color:#666666;
+    border-top:1px solid #999999;
+    border-bottom:1px solid #999999;
+}
+#ctl00_ContentPlaceHolder1_boxEmAndamento .esquerda p {
+    color:#fff;
+    padding:0px;
+}
+.Atual2Linhas {
+    font-size: 12px;
+}
+#ctl00_ContentPlaceHolder1_lblSaldoPrePago {
+    font-size: 13px;
+}
+.Botoes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#ctl00_ContentPlaceHolder1_itensConsulta
+{
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.modalTelefonePorEndereco {
+    margin-top: -150px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: auto;
+    max-height: 500px;
+    left: 50%;
+    margin-left: -130px;
+    padding: 2px 4px 10px 2px;
+    position: fixed;
+    top: 50%;
+    width: 320px;
+    overflow-y: auto;
+    overflow-x: auto;
+    z-index: 99999 !important;
+}
+
+.modalEnderecoPorTelefone {
+    margin-top: -150px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: auto;
+    max-height: 500px;
+    left: 50%;
+    margin-left: -290px;
+    padding: 2px 4px 10px 2px;
+    position: fixed;
+    top: 50%;
+    width: 620px;
+    overflow-y: auto;
+    overflow-x: auto;
+    z-index: 99999 !important;
+}
+
+.maskModalEnderecoTelefone {
+    background: none repeat scroll 0 0 #001E47;
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    -moz-opacity: 0.7;
+    filter: alpha (opacity= 70);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999 !important;
+}
+
+.actual-search {
+    font-size:11px;
+    margin-left: 229px;
+    margin-bottom: 8px;
+}
+    .actual-search span {
+        font-style:italic;
+        margin-right:5px;
+    }

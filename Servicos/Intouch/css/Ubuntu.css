@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'UbuntuRegular';
+    src: url('Ubuntu/Ubuntu-R-webfont.eot');
+    src: url('Ubuntu/Ubuntu-R-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Ubuntu/Ubuntu-R-webfont.woff') format('woff'),
+         url('Ubuntu/Ubuntu-R-webfont.ttf') format('truetype'),
+         url('Ubuntu/Ubuntu-R-webfont.svg#UbuntuRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UbuntuBold';
+    src: url('Ubuntu/Ubuntu-B-webfont.eot');
+    src: url('Ubuntu/Ubuntu-B-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Ubuntu/Ubuntu-B-webfont.woff') format('woff'),
+         url('Ubuntu/Ubuntu-B-webfont.ttf') format('truetype'),
+         url('Ubuntu/Ubuntu-B-webfont.svg#UbuntuBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UbuntuMedium';
+    src: url('Ubuntu/Ubuntu-M-webfont.eot');
+    src: url('Ubuntu/Ubuntu-M-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Ubuntu/Ubuntu-M-webfont.woff') format('woff'),
+         url('Ubuntu/Ubuntu-M-webfont.ttf') format('truetype'),
+         url('Ubuntu/Ubuntu-M-webfont.svg#UbuntuMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

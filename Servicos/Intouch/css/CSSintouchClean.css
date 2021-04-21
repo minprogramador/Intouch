@@ -1,0 +1,45 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+@import url(layoutClean.css);
+
+/*-----------------------------------------------------------------------
+Reset
+------------------------------------------------------------------------*/
+html, body, table, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul,
+ol, li, dl, dt, dd, form, a, fieldset, input, th, textarea, button
+{margin: 0; padding: 0; border: 0; outline: none;}
+
+.menu01:link { color : #0000CC; }
+.menu01:visited { color : #0000CC;}
+.menu01:hover {  color : #0000CC;}
+
+/*-----------------------------------------------------------------------
+Global
+------------------------------------------------------------------------*/
+
+.backLog{
+	width:100%;
+	margin:0;
+	background-image:url(../img/bg-body-login.jpg);
+	background-position:top center;
+	background-repeat:no-repeat;
+	overflow:visible;
+}
+
+#maincontainer{
+	width:100%;
+	margin:0;
+	min-height:320px;
+	background-image:url(../img/bg-body.jpg);
+	background-position:top center;
+	background-repeat:no-repeat;
+	overflow:auto;
+}
+
+#container{
+	margin:auto;
+	width:981px;	
+	border: 0px solid red;
+}
+

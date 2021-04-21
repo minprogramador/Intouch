@@ -1,0 +1,4 @@
+.phpintel
+.phpintel/
+composer.lock
+.env
